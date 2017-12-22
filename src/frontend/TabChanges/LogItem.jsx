@@ -93,6 +93,7 @@ export default class LogItem extends React.Component {
           <div className={css(styles.headContent)}>
             <span className={css(styles.headContentTitle)}>
               {change.type.toUpperCase().slice(0, 1) + change.type.slice(1)}
+              { ` ${change.name ? change.name : ''}` }
             </span>{' '}
             {change.object && (
               <ChangeDataViewerPopover
